@@ -1,0 +1,25 @@
+{
+  "name": "ts-node-demo",
+  "version": "1.0.0",
+  "description": "a demo for ts-node",
+  "main": "./src/index.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "tsc -w",
+    "start": "nodemon ./dist/index.js",
+    "dev": "concurrently -k \"npm run watch\"  \"npm run start\""
+  },
+  "keywords": [
+    "typescript",
+    "ts"
+  ],
+  "author": "huayifeng <qiufenghyf@163.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mocha": "^5.2.1",
+    "@types/node": "^10.3.0",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5"
+  }
+}
